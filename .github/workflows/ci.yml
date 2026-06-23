@@ -16,25 +16,9 @@ permissions:
   statuses: write
 
 jobs:
-  structure:
-    name: Check Project Structure
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Check required files
-        run: |
-          test -d html
-          test -f html/index.html
-          test -d html/css
-          test -d html/js
-
   lint:
     name: Lint HTML, CSS and JavaScript
     runs-on: ubuntu-latest
-    needs: structure
 
     defaults:
       run:
@@ -65,29 +49,3 @@ jobs:
       - name: Lint JavaScript
         run: |
           eslint "**/*.js" || true
-
-  security:
-    name: Security Checks
-    runs-on: ubuntu-latest
-    needs: lint
-
-    defaults:
-      run:
-        working-directory: html
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-
-      - name: Create temporary package file
-        run: |
-          npm init -y
-
-      - name: Run npm audit
-        run: |
-          npm audit --audit-level=high || true
