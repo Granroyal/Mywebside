@@ -1,0 +1,22 @@
+# Mac/Windows systemfiler
+.DS_Store
+Thumbs.db
+
+# Hemmelige environment-filer
+.env
+.env.local
+.env.production
+
+# Node.js, hvis du senere bruger npm
+node_modules/
+
+# Build/dist mapper, hvis du senere bygger projektet
+dist/
+build/
+
+# IDE/editor filer
+.vscode/
+.idea/
+
+# Logs
+*.log
