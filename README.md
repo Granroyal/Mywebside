@@ -13,7 +13,17 @@ Formålet med dette lille projekt er at jeg ikke skal glemme, hvad jeg har lært
 
 ## Todo
 
-- [ ] 
+- [Tilføje hobbier (TCG samling fx)]
+- [Mine projekter]
+- [Studie]
+- [CV? Kun privat.]
+- []
+- []
+- []
+- []
+- []
+- []
+
 
 ## Status
 
