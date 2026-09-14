@@ -19,14 +19,92 @@
     </header>
 
     <main>
-        <section>
-            <h2>Overskrift</h2>
-            <p>Skriv din tekst her.</p>
+        <section class="content-view active" id="hobby-overview">
+            <h2>Mine hobbyer</h2>
+            <p>Her samler jeg de ting, jeg godt kan lide at norde med i fritiden.</p>
+
+            <div class="topic-links">
+                <button type="button" data-one-piece-view="one-piece">
+                    <h3>One Piece</h3>
+                    <p>Min One Piece TCG samling, chase cards og kort jeg gerne vil finde.</p>
+                </button>
+
+                <button type="button" data-pokemon-view="pokemon">
+                    <h3>Pokemon</h3>
+                    <p>Pokemon kort, favoritter og ting jeg samler på.</p>
+                </button>
+            </div>
         </section>
 
-        <section>
-            <h2>Overskrift</h2>
-            <p>Skriv din tekst her.</p>
+        <section class="content-view" id="one-piece">
+            <button class="back-button" type="button" data-one-piece-view="hobby-overview">Tilbage</button>
+            <h2>One Piece TCG</h2>
+            <p>Her samler jeg mine One Piece kort, chase cards og sealed produkter.</p>
+
+            <div class="topic-links">
+                <button type="button" data-one-piece-view="mine-chase-cards">
+                    <h3>Mine chase cards</h3>
+                    <p>Kort jeg ejer og gerne vil vise frem i samlingen.</p>
+                </button>
+
+                <button type="button" data-one-piece-view="missing-chase-cards">
+                    <h3>Chase cards jeg mangler</h3>
+                    <p>Kort jeg stadig leder efter eller gerne vil købe senere.</p>
+                </button>
+
+                <button type="button" data-one-piece-view="sealed-products">
+                    <h3>Sealed products</h3>
+                    <p>Boosters, displays, decks og andre forseglede produkter.</p>
+                </button>
+
+                <button type="button" data-one-piece-view="one-piece-graded-cards">
+                    <h3>Graded cards</h3>
+                    <p>One Piece kort der er graded hos PSA, Beckett eller lignende.</p>
+                </button>
+            </div>
+        </section>
+
+        <section class="content-view" id="mine-chase-cards">
+            <button class="back-button" type="button" data-one-piece-view="one-piece">Tilbage</button>
+            <h2>Mine chase cards</h2>
+            <p>Her kommer de One Piece chase cards, jeg allerede ejer.</p>
+        </section>
+
+        <section class="content-view" id="missing-chase-cards">
+            <button class="back-button" type="button" data-one-piece-view="one-piece">Tilbage</button>
+            <h2>Chase cards jeg mangler</h2>
+            <p>Her kommer de One Piece chase cards, jeg stadig leder efter.</p>
+        </section>
+
+        <section class="content-view" id="sealed-products">
+            <button class="back-button" type="button" data-one-piece-view="one-piece">Tilbage</button>
+            <h2>Sealed products</h2>
+            <p>Her kommer mine forseglede One Piece produkter.</p>
+        </section>
+
+        <section class="content-view" id="one-piece-graded-cards">
+            <button class="back-button" type="button" data-one-piece-view="one-piece">Tilbage</button>
+            <h2>Graded cards</h2>
+            <p>Her kommer mine graded One Piece kort.</p>
+        </section>
+
+        <section class="content-view" id="pokemon">
+            <button class="back-button" type="button" data-pokemon-view="hobby-overview">Tilbage</button>
+            <h2>Pokemon</h2>
+            <p>Her kommer mine Pokemon kort, favoritter og samling.</p>
+
+            <div class="topic-links">
+                <button type="button" data-pokemon-view="pokemon-graded-cards">
+                    <h3>Graded cards</h3>
+                    <p>Pokemon kort der er graded hos PSA, Beckett eller lignende.</p>
+                </button>
+            </div>
+        </section>
+
+        <section class="content-view" id="pokemon-graded-cards">
+            <button class="back-button" type="button" data-pokemon-view="pokemon">Tilbage</button>
+            <h2>Graded cards</h2>
+            <p>Her kommer mine graded Pokemon kort.</p>
         </section>
     </main>
 
@@ -39,6 +117,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="../js/one-piece.js"></script>
+    <script src="../js/pokemon.js"></script>
 </body>
 </html>
