@@ -1,8 +1,8 @@
-# Chris Hub
+# Personlig hjemmeside
 
-Dette projekt er min personlige hjemmeside og mit eget sted til at samle det, hvor jeg kan føle min rejse og udvikling gennem tiden.
+Min personlige hjemmeside og mit lille hyggeprojekt. Her samler jeg mine projekter, noter fra datamatikeruddannelsen og hobbyer, så jeg kan følge min udvikling over tid.
 
-Formålet med dette lille projekt er at jeg ikke skal glemme, hvad jeg har lært of holde det ved lige så jeg ikke ruster.
+Jeg bygger siden fra bunden for at øve mig og holde det, jeg lærer, ved lige.
 
 ## Formål
 
@@ -11,23 +11,51 @@ Formålet med dette lille projekt er at jeg ikke skal glemme, hvad jeg har lært
 - At dokumentere ting, jeg lærer på datamatikeruddannelsen
 - At bygge en portfolio, som kan vise min udvikling over tid
 
+## Indhold
+
+- **Forside:** 
+- **Om mig:** 
+- **Projekter:** 
+- **Studie:** 
+- **Hobby:** 
+
+Projekt- og hobbysektionerne har navigation på plads, men selve projekterne og kortsamlingerne mangler endnu at blive tilføjet.
+
+## Teknologi
+
+Siden er bygget med HTML, CSS og JavaScript uden frameworks eller et build-trin. Python 3 bruges til den medfølgende lokale webserver.
+
+## Automatiske tjek
+
+GitHub Actions kontrollerer HTML med HTMLHint og kører derefter en OWASP ZAP Baseline-scanning mod den lokale webserver. Workflowet kører ved push til `main` og `html` samt ved pull requests til `main`.
+
+### Overvej disse pipeline-tjek
+
+Mulige næste skridt for at automatisere flere af de manuelle tjek. De er endnu ikke sat op:
+
+- [ ] Tjek af CSS og JavaScript for fejl og ensartet kodestil.
+- [ ] Tjek for døde links og manglende lokale filer, fx billeder og scripts.
+- [ ] Tjek af formatering, så koden følger samme stil på tværs af filer.
+- [ ] Tjek af tilgængelighed, fx kontrast, formularlabels og alt-tekst på billeder.
+- [ ] Browsertest af navigation og knapper i projekt- og hobbysektionerne.
+- [ ] Tjek af sidernes indlæsningstid og størrelse for at opdage tunge ressourcer.
+
 ## Todo
 
-- [Tilføje hobbier (TCG samling fx)]
-- [Mine projekter]
-- [Studie]
-- [CV? Kun privat.]
-- []
-- []
-- []
-- []
-- []
-- []
-
+- [x] Oprette sider og fælles navigation
+- [x] Tilføje sektioner til Raspberry Pi, One Piece TCG og Pokémon
+- [x] Opsætte automatiske HTML-tjek og en sikkerhedsscanning
+- [ ] Skrive en personlig præsentation på Om mig-siden
+- [ ] Tilføje beskrivelser og billeder af mine projekter
+- [ ] Udfylde studiesiden med noter og emner
+- [ ] Tilføje kort og produkter til mine TCG-samlinger
+- [ ] Opdatere footer og links til GitHub og LinkedIn
+- [ ] Arbejde videre med design og layout
+- [ ] Overveje et CV, som kun skal være privat
 
 ## Status
 
-Projektet er stadig i en tidlig fase. Lige nu er fokus at få grundstrukturen på plads og derefter bygge mere indhold og design ovenpå.
+Projektet er under opbygning. Grundstrukturen, navigationen og de første emnesektioner er på plads. Næste skridt er at erstatte pladsholdertekst med mit eget indhold og bygge videre på designet.
 
 ## Lavet af
 
