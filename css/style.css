@@ -169,6 +169,68 @@ footer p {
     text-decoration: underline;
 }
 
+.topic-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 12px;
+    padding: 0;
+    border-top: 0;
+}
+
+.topic-links a,
+.topic-links button {
+    display: block;
+    min-height: 170px;
+    width: 100%;
+    padding: 18px;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    text-decoration: none;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.topic-links a:hover,
+.topic-links button:hover {
+    border-color: rgba(22, 119, 255, 0.45);
+    box-shadow: 0 14px 36px rgba(32, 45, 72, 0.1);
+    transform: translateY(-2px);
+}
+
+.topic-links h3 {
+    margin-top: 0;
+}
+
+.content-view {
+    display: none;
+}
+
+.content-view.active {
+    display: block;
+}
+
+.back-button {
+    margin: 0 0 18px;
+    padding: 8px 12px;
+    color: var(--brand);
+    font: inherit;
+    font-weight: 500;
+    background-color: rgba(22, 119, 255, 0.08);
+    border: 1px solid rgba(22, 119, 255, 0.2);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    color: var(--brand-dark);
+    border-color: rgba(22, 119, 255, 0.4);
+}
+
 @media (max-width: 640px) {
     header {
         padding: 28px 16px 22px;
@@ -192,5 +254,9 @@ footer p {
 
     h2 {
         font-size: 2rem;
+    }
+
+    .topic-links {
+        grid-template-columns: 1fr;
     }
 }

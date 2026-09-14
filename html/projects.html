@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om mig</title>
+    <title>Projekter</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <h1>Om mig</h1>
+        <h1>Projekter</h1>
         <nav>
             <a href="index.html">Forside</a>
             <a href="about.html">Om mig</a>
@@ -19,14 +19,22 @@
     </header>
 
     <main>
-        <section>
-            <h2>Overskrift</h2>
-            <p>Skriv din tekst her.</p>
+        <section class="content-view active" id="projects-overview">
+            <h2>Mine projekter</h2>
+            <p>Her samler jeg projekter, ideer og ting jeg bygger videre på.</p>
+
+            <div class="topic-links">
+                <button type="button" data-raspberry-pi-view="raspberry-pi">
+                    <h3>Raspberry Pi projekter</h3>
+                    <p>Små hardware-, server- og automation-projekter.</p>
+                </button>
+            </div>
         </section>
 
-        <section>
-            <h2>Overskrift</h2>
-            <p>Skriv din tekst her.</p>
+        <section class="content-view" id="raspberry-pi">
+            <button class="back-button" type="button" data-raspberry-pi-view="projects-overview">Tilbage</button>
+            <h2>Raspberry Pi</h2>
+            <p>Her kommer mine Raspberry Pi projekter, ideer og noter.</p>
         </section>
     </main>
 
@@ -39,6 +47,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="../js/raspberry-pi.js"></script>
 </body>
 </html>
