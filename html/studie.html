@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om mig</title>
+    <title>Studie</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <h1>Om mig</h1>
+        <h1>Studie</h1>
         <nav>
             <a href="index.html">Forside</a>
             <a href="about.html">Om mig</a>
@@ -19,14 +19,32 @@
     </header>
 
     <main>
-        <section>
-            <h2>Overskrift</h2>
-            <p>Skriv din tekst her.</p>
+        <section class="content-view active" id="study-overview">
+            <h2>Mit studie</h2>
+            <p>Her samler jeg mine uddannelser, noter og det, jeg lærer undervejs.</p>
+
+            <div class="topic-links">
+                <button type="button" data-study-view="educations">
+                    <h3>Uddannelser</h3>
+                    <p>Mine uddannelser og erfaringer fra studiet.</p>
+                </button>
+
+                <button type="button" data-study-view="useful-links">
+                    <h3>Nyttige links</h3>
+                    <p>Links til guides, dokumentation og værktøjer, jeg bruger på studiet.</p>
+                </button>
+            </div>
         </section>
 
-        <section>
-            <h2>Overskrift</h2>
-            <p>Skriv din tekst her.</p>
+        <section class="content-view" id="educations">
+            <button class="back-button" type="button" data-study-view="study-overview">Tilbage</button>
+            <h2>Uddannelser</h2>
+            <p>Her kommer mine uddannelser og det, jeg har lært undervejs.</p>
+        </section>
+        <section class="content-view" id="useful-links">
+            <button class="back-button" type="button" data-study-view="study-overview">Tilbage</button>
+            <h2>Nyttige links</h2>
+            <p>Her kommer nyttige links, jeg gerne vil kunne finde igen under studiet.</p>
         </section>
     </main>
 
