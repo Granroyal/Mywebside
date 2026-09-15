@@ -24,7 +24,30 @@
             <p>Her samler jeg projekter, ideer og ting jeg bygger videre på.</p>
 
             <div class="topic-links">
-                <button type="button" data-raspberry-pi-view="raspberry-pi">
+                <button type="button" data-project-view="current-projects">
+                    <h3>Nuværende projekter</h3>
+                    <p>Projekter jeg arbejder på lige nu.</p>
+                </button>
+
+                <button type="button" data-project-view="future-projects">
+                    <h3>Fremtidige projekter</h3>
+                    <p>Ideer og projekter jeg gerne vil gå i gang med.</p>
+                </button>
+
+                <button type="button" data-project-view="completed-projects">
+                    <h3>Færdige projekter</h3>
+                    <p>Projekter jeg har afsluttet og gerne vil vise frem.</p>
+                </button>
+            </div>
+        </section>
+
+        <section class="content-view" id="current-projects">
+            <button class="back-button" type="button" data-project-view="projects-overview">Tilbage</button>
+            <h2>Nuværende projekter</h2>
+            <p>Her samler jeg de projekter, jeg arbejder på lige nu.</p>
+
+            <div class="topic-links">
+                <button type="button" data-project-view="raspberry-pi">
                     <h3>Raspberry Pi projekter</h3>
                     <p>Små hardware-, server- og automation-projekter.</p>
                 </button>
@@ -32,9 +55,20 @@
         </section>
 
         <section class="content-view" id="raspberry-pi">
-            <button class="back-button" type="button" data-raspberry-pi-view="projects-overview">Tilbage</button>
+            <button class="back-button" type="button" data-project-view="current-projects">Tilbage</button>
             <h2>Raspberry Pi</h2>
             <p>Her kommer mine Raspberry Pi projekter, ideer og noter.</p>
+        </section>
+
+        <section class="content-view" id="future-projects">
+            <button class="back-button" type="button" data-project-view="projects-overview">Tilbage</button>
+            <h2>Fremtidige projekter</h2>
+            <p>Her kommer ideer og planer til projekter, jeg gerne vil bygge i fremtiden.</p>
+        </section>
+        <section class="content-view" id="completed-projects">
+            <button class="back-button" type="button" data-project-view="projects-overview">Tilbage</button>
+            <h2>Færdige projekter</h2>
+            <p>Her kommer mine færdige projekter med resultater og det, jeg har lært undervejs.</p>
         </section>
     </main>
 
@@ -47,6 +81,6 @@
         </div>
     </footer>
 
-    <script src="../js/raspberry-pi.js"></script>
+    <script src="../js/projects.js"></script>
 </body>
 </html>
