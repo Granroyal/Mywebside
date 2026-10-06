@@ -15,11 +15,11 @@ Jeg bygger siden fra bunden for at øve mig og holde det, jeg lærer, ved lige.
 
 - **Forside:** 
 - **Om mig:** 
-- **Projekter:** 
+- **Projekter:** Blandt andet DCR Simulation.
 - **Studie:** 
-- **Hobby:** 
+- **Hobby:** TCG (One Piece, Pokémon og Dragon Ball), 3D-printer og Top10-spilanbefalinger.
 
-Projekt- og hobbysektionerne har navigation på plads, men selve projekterne og kortsamlingerne mangler endnu at blive tilføjet.
+Projekt- og hobbysektionerne har navigation på plads. Selve indholdet, såsom projekter, kortsamlinger og 3D-print, er stadig under opbygning.
 
 ## Teknologi
 
@@ -43,12 +43,14 @@ Mulige næste skridt for at automatisere flere af de manuelle tjek. De er endnu 
 ## Todo
 
 - [x] Oprette sider og fælles navigation
-- [x] Tilføje sektioner til Raspberry Pi, One Piece TCG og Pokémon
+- [x] Tilføje sektioner til Raspberry Pi, TCG (One Piece, Pokémon og Dragon Ball), 3D-printer og Top10
+- [x] Tilføje DCR Simulation som projekt
 - [x] Opsætte automatiske HTML-tjek og en sikkerhedsscanning
 - [ ] Skrive en personlig præsentation på Om mig-siden
 - [ ] Tilføje beskrivelser og billeder af mine projekter
 - [ ] Udfylde studiesiden med noter og emner
 - [ ] Tilføje kort og produkter til mine TCG-samlinger
+- [ ] Tilføje billeder og beskrivelser af 3D-printprojekter
 - [ ] Opdatere footer og links til GitHub og LinkedIn
 - [ ] Arbejde videre med design og layout
 - [ ] Overveje et CV, som kun skal være privat
