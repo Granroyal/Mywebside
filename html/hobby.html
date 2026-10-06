@@ -24,19 +24,48 @@
             <p>Her samler jeg de ting, jeg godt kan lide at norde med i fritiden.</p>
 
             <div class="topic-links">
-                <button type="button" data-one-piece-view="one-piece">
+                <button type="button" data-tcg-view="tcg">
+                    <h3>TCG</h3>
+                    <p>Mine samlekortspil, samlinger, chase cards og graded cards.</p>
+                </button>
+
+                <button type="button" data-top10-view="top10">
+                    <h3>Top 10</h3>
+                    <p>Mine spilanbefalinger og top 10 over spil.</p>
+                </button>
+
+                <button type="button" data-hobby-view="3d-printer">
+                    <h3>3D-printer</h3>
+                    <p>Mine 3D-printprojekter, idéer og ting jeg arbejder på.</p>
+                </button>
+            </div>
+        </section>
+
+        <section class="content-view" id="3d-printer">
+            <button class="back-button" type="button" data-hobby-view="hobby-overview">Tilbage</button>
+            <h2>3D-printer</h2>
+            <p>Her samler jeg mine 3D-printprojekter, idéer og ting, jeg gerne vil printe.</p>
+        </section>
+
+        <section class="content-view" id="tcg">
+            <button class="back-button" type="button" data-tcg-view="hobby-overview">Tilbage</button>
+            <h2>TCG</h2>
+            <p>Her samler jeg mine kortspil og samlinger.</p>
+
+            <div class="topic-links">
+                <button type="button" data-tcg-view="one-piece">
                     <h3>One Piece</h3>
                     <p>Min One Piece TCG samling, chase cards og kort jeg gerne vil finde.</p>
                 </button>
 
-                <button type="button" data-pokemon-view="pokemon">
+                <button type="button" data-tcg-view="pokemon">
                     <h3>Pokemon</h3>
                     <p>Pokemon kort, favoritter og ting jeg samler på.</p>
                 </button>
 
-                <button type="button" data-top10-view="top10">
-                    <h3>Top10</h3>
-                    <p>Mine spilanbefalinger og top 10 over spil.</p>
+                <button type="button" data-tcg-view="dragon-ball">
+                    <h3>Dragon Ball</h3>
+                    <p>Dragon Ball kort, favoritter og ting jeg samler på.</p>
                 </button>
             </div>
         </section>
@@ -48,7 +77,7 @@
         </section>
 
         <section class="content-view" id="one-piece">
-            <button class="back-button" type="button" data-one-piece-view="hobby-overview">Tilbage</button>
+            <button class="back-button" type="button" data-tcg-view="tcg">Tilbage</button>
             <h2>One Piece TCG</h2>
             <p>Her samler jeg mine One Piece kort, chase cards og sealed produkter.</p>
 
@@ -100,7 +129,7 @@
         </section>
 
         <section class="content-view" id="pokemon">
-            <button class="back-button" type="button" data-pokemon-view="hobby-overview">Tilbage</button>
+            <button class="back-button" type="button" data-tcg-view="tcg">Tilbage</button>
             <h2>Pokemon</h2>
             <p>Her kommer mine Pokemon kort, favoritter og samling.</p>
 
@@ -117,6 +146,12 @@
             <h2>Graded cards</h2>
             <p>Her kommer mine graded Pokemon kort.</p>
         </section>
+
+        <section class="content-view" id="dragon-ball">
+            <button class="back-button" type="button" data-tcg-view="tcg">Tilbage</button>
+            <h2>Dragon Ball</h2>
+            <p>Her kommer mine Dragon Ball kort, favoritter og samling.</p>
+        </section>
     </main>
 
     <footer>
@@ -131,5 +166,7 @@
     <script src="../js/one-piece.js"></script>
     <script src="../js/pokemon.js"></script>
     <script src="../js/top10.js"></script>
+    <script src="../js/tcg.js"></script>
+    <script src="../js/hobby.js"></script>
 </body>
 </html>
