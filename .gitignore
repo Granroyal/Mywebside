@@ -6,6 +6,22 @@ Thumbs.db
 .env
 .env.local
 .env.production
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Private nøgler og certifikater
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
 
 # Node.js, hvis du senere bruger npm
 node_modules/
@@ -19,4 +35,11 @@ build/
 .idea/
 
 # Logs
-*.log∏
+*.log
+
+# Test- og backupfiler
+.coverage
+htmlcov/
+.pytest_cache/
+*.bak
+*.swp

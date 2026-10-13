@@ -53,6 +53,7 @@ Mulige næste skridt for at automatisere flere af de manuelle tjek. De er endnu 
 - [ ] Tilføje billeder og beskrivelser af 3D-printprojekter
 - [ ] Opdatere footer og links til GitHub og LinkedIn
 - [ ] Arbejde videre med design og layout
+- [ ] Overveje et eget grading check til hjemmesiden
 - [ ] Overveje et CV, som kun skal være privat
 
 ## Status
