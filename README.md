@@ -46,15 +46,14 @@ Mulige næste skridt for at automatisere flere af de manuelle tjek. De er endnu 
 - [x] Tilføje sektioner til Raspberry Pi, TCG (One Piece, Pokémon og Dragon Ball), 3D-printer og Top10
 - [x] Tilføje DCR Simulation som projekt
 - [x] Opsætte automatiske HTML-tjek og en sikkerhedsscanning
-- [ ] Skrive en personlig præsentation på Om mig-siden
+- [ ] Skrive en personlig præsentation på Om mig-siden (Måske)
 - [ ] Tilføje beskrivelser og billeder af mine projekter
-- [ ] Udfylde studiesiden med noter og emner
+- [ ] Udfylde studiesiden med noter og emner (Måske)
 - [ ] Tilføje kort og produkter til mine TCG-samlinger
 - [ ] Tilføje billeder og beskrivelser af 3D-printprojekter
 - [ ] Opdatere footer og links til GitHub og LinkedIn
 - [ ] Arbejde videre med design og layout
 - [ ] Overveje et eget grading check til hjemmesiden
-- [ ] Overveje et CV, som kun skal være privat
 
 ## Status
 
