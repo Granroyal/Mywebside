@@ -15,8 +15,8 @@ Jeg bygger siden fra bunden for at øve mig og holde det, jeg lærer, ved lige.
 
 - **Forside:** 
 - **Om mig:** 
-- **Projekter:** Blandt andet DCR Simulation.
-- **Studie:** 
+- **Projekter:** Rasperry PI, NAS
+- **Studie:** Datamatiker
 - **Hobby:** TCG (One Piece, Pokémon og Dragon Ball), 3D-printer og Top10-spilanbefalinger.
 
 Projekt- og hobbysektionerne har navigation på plads. Selve indholdet, såsom projekter, kortsamlinger og 3D-print, er stadig under opbygning.
