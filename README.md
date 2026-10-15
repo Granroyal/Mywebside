@@ -44,7 +44,6 @@ Mulige næste skridt for at automatisere flere af de manuelle tjek. De er endnu 
 
 - [x] Oprette sider og fælles navigation
 - [x] Tilføje sektioner til Raspberry Pi, TCG (One Piece, Pokémon og Dragon Ball), 3D-printer og Top10
-- [x] Tilføje DCR Simulation som projekt
 - [x] Opsætte automatiske HTML-tjek og en sikkerhedsscanning
 - [ ] Skrive en personlig præsentation på Om mig-siden (Måske)
 - [ ] Tilføje beskrivelser og billeder af mine projekter
