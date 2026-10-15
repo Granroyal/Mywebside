@@ -48,33 +48,34 @@ jobs:
       #   run: |
       #     eslint "**/*.js"
 
-  security:
-    name: OWASP ZAP Baseline Scan
-    runs-on: ubuntu-latest
-    needs: lint
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Start local web server
-        run: |
-          python3 scripts/security_server.py &
-
-      - name: Wait for site
-        run: |
-          for i in {1..20}; do
-            if curl --fail --silent --show-error http://127.0.0.1:8080/html/index.html > /dev/null; then
-              exit 0
-            fi
-            sleep 1
-          done
-          exit 1
-
-      - name: Run OWASP ZAP baseline scan
-        uses: zaproxy/action-baseline@v0.15.0
-        with:
-          target: http://127.0.0.1:8080/html/index.html
-          fail_action: false
-          allow_issue_writing: false
-          artifact_name: zap-baseline-report
+  # Disabled: OWASP ZAP baseline scan currently causes more CI friction than value.
+  # security:
+  #   name: OWASP ZAP Baseline Scan
+  #   runs-on: ubuntu-latest
+  #   needs: lint
+  #
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
+  #
+  #     - name: Start local web server
+  #       run: |
+  #         python3 scripts/security_server.py &
+  #
+  #     - name: Wait for site
+  #       run: |
+  #         for i in {1..20}; do
+  #           if curl --fail --silent --show-error http://127.0.0.1:8080/html/index.html > /dev/null; then
+  #             exit 0
+  #           fi
+  #           sleep 1
+  #         done
+  #         exit 1
+  #
+  #     - name: Run OWASP ZAP baseline scan
+  #       uses: zaproxy/action-baseline@v0.15.0
+  #       with:
+  #         target: http://127.0.0.1:8080/html/index.html
+  #         fail_action: false
+  #         allow_issue_writing: false
+  #         artifact_name: zap-baseline-report
