@@ -67,7 +67,7 @@ jobs:
   #         for i in {1..20}; do
   #           if curl --fail --silent --show-error http://127.0.0.1:8080/html/index.html > /dev/null; then
   #             exit 0
-  #           fi
+  #           figit
   #           sleep 1
   #         done
   #         exit 1
