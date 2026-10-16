@@ -15,11 +15,13 @@ Jeg bygger siden fra bunden for at øve mig og holde det, jeg lærer, ved lige.
 
 - **Forside:**
 - **Om mig:**
-- **Projekter:** Rasperry PI, NAS
+- **Projekter:** Raspberry Pi, NAS Ser
 - **Studie:** Datamatiker
-- **Hobby:** TCG (One Piece, Pokémon og Dragon Ball), 3D-printer og Top10-spilanbefalinger.
+- **Hobby:** TCG (One Piece, Pokémon og Dragon Ball), 3D-printer og Top10-spilanbefalinger
 
-Projekt- og hobbysektionerne har navigation på plads. Selve indholdet, såsom projekter, kortsamlinger og 3D-print, er stadig under opbygning.
+Hobby-siden samler oversigten. One Piece, Pokémon og Dragon Ball har hver deres side, mens
+de enkelte chase cards fortsat vises på deres egen TCG-side. Selve indholdet, såsom
+projekter, kortsamlinger og 3D-print, er stadig under opbygning.
 
 ## Teknologi
 
@@ -27,7 +29,12 @@ Siden er bygget med HTML, CSS og JavaScript uden frameworks eller et build-trin.
 
 ## Automatiske tjek
 
-GitHub Actions kontrollerer HTML, lokale links og filer, JavaScript-syntaks og formatering. OWASP ZAP-scanningen er foreløbig slået fra. Workflowet kører ved push til `main` og `html` samt ved pull requests til `main`.
+GitHub Actions kører en pipeline, som automatisk kontrollerer projektet ved push til
+`main` og `html` samt ved pull requests til `main`.
+
+Pipelinen installerer først de præcise værktøjsversioner fra `package-lock.json` med
+`npm ci`. Derefter kører den HTML-tjek, tjek for døde lokale links og manglende filer,
+JavaScript-syntaks og Prettier-formatering. OWASP ZAP-scanningen er foreløbig slået fra.
 
 ### Overvej disse pipeline-tjek
 
