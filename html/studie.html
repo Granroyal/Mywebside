@@ -1,62 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studie</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Studie</h1>
-        <nav>
-            <a href="index.html">Forside</a>
-            <a href="about.html">Om mig</a>
-            <a href="projects.html">Projekter</a>
-            <a href="studie.html">Studie</a>
-            <a href="hobby.html">Hobby</a>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Studie</title>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Studie</h1>
+            <nav>
+                <a href="../index.html">Forside</a>
+                <a href="about.html">Om mig</a>
+                <a href="projects.html">Projekter</a>
+                <a href="studie.html">Studie</a>
+                <a href="hobby.html">Hobby</a>
+            </nav>
+        </header>
 
-    <main>
-        <section class="content-view active" id="study-overview">
-            <h2>Mit studie</h2>
-            <p>Her samler jeg mine uddannelser, noter og det, jeg lærer undervejs.</p>
+        <main>
+            <section class="content-view active" id="study-overview">
+                <h2>Mit studie</h2>
+                <p>Her samler jeg mine uddannelser, noter og det, jeg lærer undervejs.</p>
 
-            <div class="topic-links">
-                <button type="button" data-study-view="educations">
-                    <h3>Uddannelser</h3>
-                    <p>Mine uddannelser og erfaringer fra studiet.</p>
+                <div class="topic-links">
+                    <button type="button" data-study-view="educations">
+                        <h3>Uddannelser</h3>
+                        <p>Mine uddannelser og erfaringer fra studiet.</p>
+                    </button>
+
+                    <button type="button" data-study-view="useful-links">
+                        <h3>Nyttige links</h3>
+                        <p>Links til guides, dokumentation og værktøjer, jeg bruger på studiet.</p>
+                    </button>
+                </div>
+            </section>
+
+            <section class="content-view" id="educations">
+                <button class="back-button" type="button" data-study-view="study-overview">
+                    Tilbage
                 </button>
-
-                <button type="button" data-study-view="useful-links">
-                    <h3>Nyttige links</h3>
-                    <p>Links til guides, dokumentation og værktøjer, jeg bruger på studiet.</p>
+                <h2>Uddannelser</h2>
+                <p>Her kommer mine uddannelser og det, jeg har lært undervejs.</p>
+            </section>
+            <section class="content-view" id="useful-links">
+                <button class="back-button" type="button" data-study-view="study-overview">
+                    Tilbage
                 </button>
+                <h2>Nyttige links</h2>
+                <p>Her kommer nyttige links, jeg gerne vil kunne finde igen under studiet.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Footer tekst</p>
+            <div class="socials">
+                <span>Socials</span>
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
             </div>
-        </section>
+        </footer>
 
-        <section class="content-view" id="educations">
-            <button class="back-button" type="button" data-study-view="study-overview">Tilbage</button>
-            <h2>Uddannelser</h2>
-            <p>Her kommer mine uddannelser og det, jeg har lært undervejs.</p>
-        </section>
-        <section class="content-view" id="useful-links">
-            <button class="back-button" type="button" data-study-view="study-overview">Tilbage</button>
-            <h2>Nyttige links</h2>
-            <p>Her kommer nyttige links, jeg gerne vil kunne finde igen under studiet.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>Footer tekst</p>
-        <div class="socials">
-            <span>Socials</span>
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
-        </div>
-    </footer>
-
-    <script src="../js/studie.js"></script>
-</body>
+        <script src="../js/studie.js"></script>
+    </body>
 </html>

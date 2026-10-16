@@ -1,170 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobby</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Hobby</h1>
-        <nav>
-            <a href="index.html">Forside</a>
-            <a href="about.html">Om mig</a>
-            <a href="projects.html">Projekter</a>
-            <a href="studie.html">Studie</a>
-            <a href="hobby.html">Hobby</a>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hobby</title>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Hobby</h1>
+            <nav>
+                <a href="../index.html">Forside</a>
+                <a href="about.html">Om mig</a>
+                <a href="projects.html">Projekter</a>
+                <a href="studie.html">Studie</a>
+                <a href="hobby.html">Hobby</a>
+            </nav>
+        </header>
 
-    <main>
-        <section class="content-view active" id="hobby-overview">
-            <h2>Mine hobbyer</h2>
-            <p>Her samler jeg de ting, jeg godt kan lide at norde med i fritiden.</p>
+        <main>
+            <section class="content-view active" id="hobby-overview">
+                <h2>Mine hobbyer</h2>
+                <p>Her samler jeg de ting, jeg godt kan lide at norde med i fritiden.</p>
 
-            <div class="topic-links">
-                <button type="button" data-tcg-view="tcg">
-                    <h3>TCG</h3>
-                    <p>Samlekortspil, chase cards og andre TCG-interesser.</p>
+                <div class="topic-links">
+                    <button type="button" data-tcg-view="tcg">
+                        <h3>TCG</h3>
+                        <p>Samlekortspil, chase cards og andre TCG-interesser.</p>
+                    </button>
+
+                    <button type="button" data-top10-view="top10">
+                        <h3>Top 10</h3>
+                        <p>Mine spilanbefalinger og top 10 over spil.</p>
+                    </button>
+
+                    <button type="button" data-hobby-view="3d-printer">
+                        <h3>3D-printer</h3>
+                        <p>Mine 3D-printprojekter, idéer og ting jeg arbejder på.</p>
+                    </button>
+                </div>
+            </section>
+
+            <section class="content-view" id="3d-printer">
+                <button class="back-button" type="button" data-hobby-view="hobby-overview">
+                    Tilbage
                 </button>
+                <h2>3D-printer</h2>
+                <p>Her samler jeg mine 3D-printprojekter, idéer og ting, jeg gerne vil printe.</p>
+            </section>
 
-                <button type="button" data-top10-view="top10">
-                    <h3>Top 10</h3>
-                    <p>Mine spilanbefalinger og top 10 over spil.</p>
+            <section class="content-view" id="tcg">
+                <button class="back-button" type="button" data-tcg-view="hobby-overview">
+                    Tilbage
                 </button>
+                <h2>TCG</h2>
+                <p>Her samler jeg mine kortspil og samlinger.</p>
 
-                <button type="button" data-hobby-view="3d-printer">
-                    <h3>3D-printer</h3>
-                    <p>Mine 3D-printprojekter, idéer og ting jeg arbejder på.</p>
+                <div class="topic-links">
+                    <a href="one-piece.html">
+                        <h3>One Piece</h3>
+                        <p>Min One Piece TCG samling, chase cards og kort jeg gerne vil finde.</p>
+                    </a>
+
+                    <a href="pokemon.html">
+                        <h3>Pokemon</h3>
+                        <p>Pokemon kort, favoritter og ting jeg samler på.</p>
+                    </a>
+
+                    <a href="dragon-ball.html">
+                        <h3>Dragon Ball</h3>
+                        <p>Dragon Ball kort, favoritter og ting jeg samler på.</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class="content-view" id="top10">
+                <button class="back-button" type="button" data-top10-view="hobby-overview">
+                    Tilbage
                 </button>
+                <h2>Top10</h2>
+                <p>Her mine 10 bedste spilanbefalinger.</p>
+
+                <div class="pokemon-favourites">
+                    <h3>Mine top 10 spil</h3>
+                    <ul>
+                        <li>
+                            <button type="button" data-top10-view="top10-game-1">Nameless 1</button>
+                        </li>
+                        <li>
+                            <button type="button" data-top10-view="top10-game-2">Nameless 2</button>
+                        </li>
+                        <li>
+                            <button type="button" data-top10-view="top10-game-3">Nameless 3</button>
+                        </li>
+                        <li>
+                            <button type="button" data-top10-view="top10-game-4">Nameless 4</button>
+                        </li>
+                        <li>
+                            <button type="button" data-top10-view="top10-game-5">Nameless 5</button>
+                        </li>
+                        <li>
+                            <button type="button" data-top10-view="top10-game-6">Nameless 6</button>
+                        </li>
+                        <li>
+                            <button type="button" data-top10-view="top10-game-7">Nameless 7</button>
+                        </li>
+                        <li>
+                            <button type="button" data-top10-view="top10-game-8">Nameless 8</button>
+                        </li>
+                        <li>
+                            <button type="button" data-top10-view="top10-game-9">Nameless 9</button>
+                        </li>
+                        <li>
+                            <button type="button" data-top10-view="top10-game-10">
+                                Nameless 10
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content-view" id="top10-game-1">
+                <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
+                <h2>Nameless 1</h2>
+                <p>Tilføj din beskrivelse her.</p>
+            </section>
+
+            <section class="content-view" id="top10-game-2">
+                <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
+                <h2>Nameless 2</h2>
+                <p>Tilføj din beskrivelse her.</p>
+            </section>
+
+            <section class="content-view" id="top10-game-3">
+                <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
+                <h2>Nameless 3</h2>
+                <p>Tilføj din beskrivelse her.</p>
+            </section>
+
+            <section class="content-view" id="top10-game-4">
+                <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
+                <h2>Nameless 4</h2>
+                <p>Tilføj din beskrivelse her.</p>
+            </section>
+
+            <section class="content-view" id="top10-game-5">
+                <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
+                <h2>Nameless 5</h2>
+                <p>Tilføj din beskrivelse her.</p>
+            </section>
+
+            <section class="content-view" id="top10-game-6">
+                <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
+                <h2>Nameless 6</h2>
+                <p>Tilføj din beskrivelse her.</p>
+            </section>
+
+            <section class="content-view" id="top10-game-7">
+                <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
+                <h2>Nameless 7</h2>
+                <p>Tilføj din beskrivelse her.</p>
+            </section>
+
+            <section class="content-view" id="top10-game-8">
+                <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
+                <h2>Nameless 8</h2>
+                <p>Tilføj din beskrivelse her.</p>
+            </section>
+
+            <section class="content-view" id="top10-game-9">
+                <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
+                <h2>Nameless 9</h2>
+                <p>Tilføj din beskrivelse her.</p>
+            </section>
+
+            <section class="content-view" id="top10-game-10">
+                <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
+                <h2>Nameless 10</h2>
+                <p>Tilføj din beskrivelse her.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Footer tekst</p>
+            <div class="socials">
+                <span>Socials</span>
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
             </div>
-        </section>
+        </footer>
 
-        <section class="content-view" id="3d-printer">
-            <button class="back-button" type="button" data-hobby-view="hobby-overview">Tilbage</button>
-            <h2>3D-printer</h2>
-            <p>Her samler jeg mine 3D-printprojekter, idéer og ting, jeg gerne vil printe.</p>
-        </section>
-
-        <section class="content-view" id="tcg">
-            <button class="back-button" type="button" data-tcg-view="hobby-overview">Tilbage</button>
-            <h2>TCG</h2>
-            <p>Her samler jeg mine kortspil og samlinger.</p>
-
-            <div class="topic-links">
-                <a href="one-piece.html">
-                    <h3>One Piece</h3>
-                    <p>Min One Piece TCG samling, chase cards og kort jeg gerne vil finde.</p>
-                </a>
-
-                <a href="pokemon.html">
-                    <h3>Pokemon</h3>
-                    <p>Pokemon kort, favoritter og ting jeg samler på.</p>
-                </a>
-
-                <a href="dragon-ball.html">
-                    <h3>Dragon Ball</h3>
-                    <p>Dragon Ball kort, favoritter og ting jeg samler på.</p>
-                </a>
-            </div>
-        </section>
-
-        <section class="content-view" id="top10">
-            <button class="back-button" type="button" data-top10-view="hobby-overview">Tilbage</button>
-            <h2>Top10</h2>
-            <p>Her mine 10 bedste spilanbefalinger.</p>
-
-            <div class="pokemon-favourites">
-                <h3>Mine top 10 spil</h3>
-                <ul>
-                    <li><button type="button" data-top10-view="top10-game-1">Nameless 1</button></li>
-                    <li><button type="button" data-top10-view="top10-game-2">Nameless 2</button></li>
-                    <li><button type="button" data-top10-view="top10-game-3">Nameless 3</button></li>
-                    <li><button type="button" data-top10-view="top10-game-4">Nameless 4</button></li>
-                    <li><button type="button" data-top10-view="top10-game-5">Nameless 5</button></li>
-                    <li><button type="button" data-top10-view="top10-game-6">Nameless 6</button></li>
-                    <li><button type="button" data-top10-view="top10-game-7">Nameless 7</button></li>
-                    <li><button type="button" data-top10-view="top10-game-8">Nameless 8</button></li>
-                    <li><button type="button" data-top10-view="top10-game-9">Nameless 9</button></li>
-                    <li><button type="button" data-top10-view="top10-game-10">Nameless 10</button></li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="content-view" id="top10-game-1">
-            <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
-            <h2>Nameless 1</h2>
-            <p>Tilføj din beskrivelse her.</p>
-        </section>
-
-        <section class="content-view" id="top10-game-2">
-            <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
-            <h2>Nameless 2</h2>
-            <p>Tilføj din beskrivelse her.</p>
-        </section>
-
-        <section class="content-view" id="top10-game-3">
-            <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
-            <h2>Nameless 3</h2>
-            <p>Tilføj din beskrivelse her.</p>
-        </section>
-
-        <section class="content-view" id="top10-game-4">
-            <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
-            <h2>Nameless 4</h2>
-            <p>Tilføj din beskrivelse her.</p>
-        </section>
-
-        <section class="content-view" id="top10-game-5">
-            <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
-            <h2>Nameless 5</h2>
-            <p>Tilføj din beskrivelse her.</p>
-        </section>
-
-        <section class="content-view" id="top10-game-6">
-            <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
-            <h2>Nameless 6</h2>
-            <p>Tilføj din beskrivelse her.</p>
-        </section>
-
-        <section class="content-view" id="top10-game-7">
-            <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
-            <h2>Nameless 7</h2>
-            <p>Tilføj din beskrivelse her.</p>
-        </section>
-
-        <section class="content-view" id="top10-game-8">
-            <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
-            <h2>Nameless 8</h2>
-            <p>Tilføj din beskrivelse her.</p>
-        </section>
-
-        <section class="content-view" id="top10-game-9">
-            <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
-            <h2>Nameless 9</h2>
-            <p>Tilføj din beskrivelse her.</p>
-        </section>
-
-        <section class="content-view" id="top10-game-10">
-            <button class="back-button" type="button" data-top10-view="top10">Tilbage</button>
-            <h2>Nameless 10</h2>
-            <p>Tilføj din beskrivelse her.</p>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Footer tekst</p>
-        <div class="socials">
-            <span>Socials</span>
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
-        </div>
-    </footer>
-
-    <script src="../js/top10.js"></script>
-    <script src="../js/tcg.js"></script>
-    <script src="../js/hobby.js"></script>
-</body>
+        <script src="../js/top10.js"></script>
+        <script src="../js/tcg.js"></script>
+        <script src="../js/hobby.js"></script>
+    </body>
 </html>

@@ -13,8 +13,8 @@ Jeg bygger siden fra bunden for at øve mig og holde det, jeg lærer, ved lige.
 
 ## Indhold
 
-- **Forside:** 
-- **Om mig:** 
+- **Forside:**
+- **Om mig:**
 - **Projekter:** Rasperry PI, NAS
 - **Studie:** Datamatiker
 - **Hobby:** TCG (One Piece, Pokémon og Dragon Ball), 3D-printer og Top10-spilanbefalinger.
@@ -27,15 +27,16 @@ Siden er bygget med HTML, CSS og JavaScript uden frameworks eller et build-trin.
 
 ## Automatiske tjek
 
-GitHub Actions kontrollerer HTML med HTMLHint og kører derefter en OWASP ZAP Baseline-scanning mod den lokale webserver. Workflowet kører ved push til `main` og `html` samt ved pull requests til `main`.
+GitHub Actions kontrollerer HTML, lokale links og filer, JavaScript-syntaks og formatering. OWASP ZAP-scanningen er foreløbig slået fra. Workflowet kører ved push til `main` og `html` samt ved pull requests til `main`.
 
 ### Overvej disse pipeline-tjek
 
-Mulige næste skridt for at automatisere flere af de manuelle tjek. De er endnu ikke sat op:
+Mulige næste skridt for at automatisere flere af de manuelle tjek:
 
-- [ ] Tjek af CSS og JavaScript for fejl og ensartet kodestil.
-- [ ] Tjek for døde links og manglende lokale filer, fx billeder og scripts.
-- [ ] Tjek af formatering, så koden følger samme stil på tværs af filer.
+- [x] Tjek af JavaScript-syntaks.
+- [x] Tjek for døde links og manglende lokale filer, fx billeder og scripts.
+- [x] Tjek af formatering, så koden følger samme stil på tværs af filer.
+- [ ] Tjek af CSS for fejl og ensartet kodestil.
 - [ ] Tjek af tilgængelighed, fx kontrast, formularlabels og alt-tekst på billeder.
 - [ ] Browsertest af navigation og knapper i projekt- og hobbysektionerne.
 - [ ] Tjek af sidernes indlæsningstid og størrelse for at opdage tunge ressourcer.

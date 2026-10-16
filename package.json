@@ -1,0 +1,13 @@
+{
+    "private": true,
+    "scripts": {
+        "check:links": "node scripts/check-links.mjs",
+        "check:js": "for file in js/*.js; do node --check \"$file\"; done",
+        "format": "prettier --write .",
+        "format:check": "prettier --check ."
+    },
+    "devDependencies": {
+        "htmlhint": "^1.9.2",
+        "prettier": "^3.9.10"
+    }
+}
