@@ -245,23 +245,49 @@ footer p {
 }
 
 .chase-card-gallery {
-    min-height: 180px;
     display: grid;
-    place-items: center;
-    padding: 24px;
-    text-align: center;
-    background-color: var(--surface-soft);
-    border: 1px dashed rgba(22, 119, 255, 0.4);
-    border-radius: 8px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    padding: 0;
+    border-top: 0;
 }
 
-.chase-card-gallery p {
+.chase-card-slot {
     margin: 0;
 }
 
-.chase-card-gallery img {
-    width: min(100%, 260px);
-    height: auto;
+.chase-card-image-placeholder {
+    display: grid;
+    min-height: 240px;
+    padding: 12px;
+    place-items: center;
+    color: var(--muted);
+    font-weight: 700;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.65);
+    border: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.chase-card-description {
+    display: block;
+    width: 100%;
+    min-height: 68px;
+    margin-top: 10px;
+    padding: 10px;
+    color: var(--text);
+    line-height: 1.4;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.chase-card-slot img {
+    display: block;
+    width: 100%;
+    min-height: 240px;
+    object-fit: cover;
     border: 1px solid var(--border);
     border-radius: 6px;
     box-shadow: 0 10px 24px rgba(32, 45, 72, 0.12);
@@ -329,5 +355,9 @@ a.back-button {
 
     .pokemon-favourites ul {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .chase-card-gallery {
+        grid-template-columns: 1fr;
     }
 }
