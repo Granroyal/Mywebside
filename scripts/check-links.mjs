@@ -37,7 +37,7 @@ async function getIds(filePath) {
     }
 
     const html = await readFile(filePath, "utf8");
-    const ids = new Set([...html.matchAll(/\bid=["']([^"']+)["']/g)].map(([, id]) => id));
+    const ids = new Set([...html.matchAll(/\bid\s*=\s*(["'])(.*?)\1/g)].map(([, , id]) => id));
     idsByFile.set(filePath, ids);
     return ids;
 }
@@ -56,10 +56,10 @@ const issues = [];
 
 for (const htmlFile of htmlFiles) {
     const html = await readFile(htmlFile, "utf8");
-    const references = html.matchAll(/\b(?:href|src)\s*=\s*["']([^"']+)["']/gi);
+    const references = html.matchAll(/\b(?:href|src)\s*=\s*(["'])(.*?)\1/gi);
 
     for (const match of references) {
-        const reference = match[1].trim();
+        const reference = match[2].trim();
 
         if (!reference || reference === "#" || isExternal(reference)) {
             continue;
