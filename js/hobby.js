@@ -12,3 +12,9 @@ hobbyButtons.forEach((button) => {
         showHobbyView(button.dataset.hobbyView);
     });
 });
+
+const requestedView = new URLSearchParams(window.location.search).get("view");
+
+if (requestedView && document.getElementById(requestedView)) {
+    showHobbyView(requestedView);
+}

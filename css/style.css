@@ -206,6 +206,58 @@ footer p {
     margin-top: 0;
 }
 
+.pokemon-favourites ul {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pokemon-favourites button {
+    width: 100%;
+    padding: 10px 12px;
+    color: var(--brand-dark);
+    font: inherit;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--surface-soft);
+    border: 1px solid rgba(22, 119, 255, 0.18);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.pokemon-favourites button:hover {
+    background-color: rgba(22, 119, 255, 0.14);
+    border-color: rgba(22, 119, 255, 0.45);
+    transform: translateY(-2px);
+}
+
+.chase-card-gallery {
+    min-height: 180px;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    text-align: center;
+    background-color: var(--surface-soft);
+    border: 1px dashed rgba(22, 119, 255, 0.4);
+    border-radius: 8px;
+}
+
+.chase-card-gallery p {
+    margin: 0;
+}
+
+.chase-card-gallery img {
+    width: min(100%, 260px);
+    height: auto;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: 0 10px 24px rgba(32, 45, 72, 0.12);
+}
+
 .content-view {
     display: none;
 }
@@ -224,6 +276,12 @@ footer p {
     border: 1px solid rgba(22, 119, 255, 0.2);
     border-radius: 6px;
     cursor: pointer;
+}
+
+a.back-button {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 .back-button:hover {
@@ -259,4 +317,9 @@ footer p {
     .topic-links {
         grid-template-columns: 1fr;
     }
+
+    .pokemon-favourites ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
 }

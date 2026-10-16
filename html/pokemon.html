@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="da">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Pokémon</title><link rel="stylesheet" href="../css/style.css"></head>
+<body>
+    <header><h1>Pokémon</h1><nav><a href="../index.html">Forside</a><a href="hobby.html?view=tcg">TCG</a></nav></header>
+    <main>
+        <section class="content-view active" id="pokemon">
+            <a class="back-button" href="hobby.html?view=tcg">Tilbage</a><h2>Pokémon</h2><p>Her kommer Pokémon-kort og favoritter.</p>
+            <div class="topic-links"><button type="button" data-pokemon-view="pokemon-chase-cards"><h3>Chase cards jeg finder spændende</h3><p>Udvalgte Pokémon chase cards.</p></button></div>
+        </section>
+        <section class="content-view" id="pokemon-chase-cards">
+            <button class="back-button" type="button" data-pokemon-view="pokemon">Tilbage</button><h2>Chase cards jeg finder spændende</h2>
+            <div class="pokemon-favourites"><h3>Mine yndlings-Pokémon</h3><ul>
+                <li><button type="button" data-pokemon-view="psyduck-chase-cards">Psyduck</button></li><li><button type="button" data-pokemon-view="magikarp-chase-cards">Magikarp</button></li><li><button type="button" data-pokemon-view="gyarados-chase-cards">Gyarados</button></li><li><button type="button" data-pokemon-view="snorlax-chase-cards">Snorlax</button></li><li><button type="button" data-pokemon-view="bulbasaur-chase-cards">Bulbasaur</button></li><li><button type="button" data-pokemon-view="raichu-chase-cards">Raichu</button></li><li><button type="button" data-pokemon-view="sandslash-chase-cards">Sandslash</button></li><li><button type="button" data-pokemon-view="slowpoke-chase-cards">Slowpoke</button></li>
+            </ul></div>
+        </section>
+        <section class="content-view pokemon-card-page" id="psyduck-chase-cards"><button class="back-button" type="button" data-pokemon-view="pokemon-chase-cards">Tilbage</button><h2>Psyduck chase cards</h2><div class="chase-card-gallery"><p>Tilføj billeder af dine Psyduck chase cards her.</p></div></section>
+        <section class="content-view pokemon-card-page" id="magikarp-chase-cards"><button class="back-button" type="button" data-pokemon-view="pokemon-chase-cards">Tilbage</button><h2>Magikarp chase cards</h2><div class="chase-card-gallery"><p>Tilføj billeder af dine Magikarp chase cards her.</p></div></section>
+        <section class="content-view pokemon-card-page" id="gyarados-chase-cards"><button class="back-button" type="button" data-pokemon-view="pokemon-chase-cards">Tilbage</button><h2>Gyarados chase cards</h2><div class="chase-card-gallery"><p>Tilføj billeder af dine Gyarados chase cards her.</p></div></section>
+        <section class="content-view pokemon-card-page" id="snorlax-chase-cards"><button class="back-button" type="button" data-pokemon-view="pokemon-chase-cards">Tilbage</button><h2>Snorlax chase cards</h2><div class="chase-card-gallery"><p>Tilføj billeder af dine Snorlax chase cards her.</p></div></section>
+        <section class="content-view pokemon-card-page" id="bulbasaur-chase-cards"><button class="back-button" type="button" data-pokemon-view="pokemon-chase-cards">Tilbage</button><h2>Bulbasaur chase cards</h2><div class="chase-card-gallery"><p>Tilføj billeder af dine Bulbasaur chase cards her.</p></div></section>
+        <section class="content-view pokemon-card-page" id="raichu-chase-cards"><button class="back-button" type="button" data-pokemon-view="pokemon-chase-cards">Tilbage</button><h2>Raichu chase cards</h2><div class="chase-card-gallery"><p>Tilføj billeder af dine Raichu chase cards her.</p></div></section>
+        <section class="content-view pokemon-card-page" id="sandslash-chase-cards"><button class="back-button" type="button" data-pokemon-view="pokemon-chase-cards">Tilbage</button><h2>Sandslash chase cards</h2><div class="chase-card-gallery"><p>Tilføj billeder af dine Sandslash chase cards her.</p></div></section>
+        <section class="content-view pokemon-card-page" id="slowpoke-chase-cards"><button class="back-button" type="button" data-pokemon-view="pokemon-chase-cards">Tilbage</button><h2>Slowpoke chase cards</h2><div class="chase-card-gallery"><p>Tilføj billeder af dine Slowpoke chase cards her.</p></div></section>
+    </main>
+    <script src="../js/pokemon.js"></script>
+</body>
+</html>
