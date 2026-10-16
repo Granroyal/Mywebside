@@ -1,81 +1,74 @@
 name: Continuous Integration
 
 on:
-  push:
-    branches:
-      - main
-      - html
-  pull_request:
-    branches:
-      - main
+    push:
+        branches:
+            - main
+            - html
+    pull_request:
+        branches:
+            - main
 
 permissions:
-  contents: read
+    contents: read
 
 jobs:
-  lint:
-    name: Lint HTML
-    runs-on: ubuntu-latest
+    quality:
+        name: Quality checks
+        runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: html
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 22
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
+            - name: Install dependencies
+              run: npm ci
 
-      - name: Install linting tools
-        run: |
-          npm install -g htmlhint
-          # npm install -g stylelint stylelint-config-standard eslint
+            - name: Lint HTML
+              run: npx htmlhint "index.html" "html/**/*.html"
 
-      - name: Lint HTML
-        run: |
-          htmlhint "**/*.html"
+            - name: Check local links and files
+              run: npm run check:links
 
-      # - name: Lint CSS
-      #   run: |
-      #     echo '{ "extends": "stylelint-config-standard" }' > .stylelintrc.json
-      #     stylelint "**/*.css"
+            - name: Check JavaScript syntax
+              run: npm run check:js
 
-      # - name: Lint JavaScript
-      #   run: |
-      #     eslint "**/*.js"
+            - name: Check formatting
+              run: npm run format:check
 
-  # Disabled: OWASP ZAP baseline scan currently causes more CI friction than value.
-  # security:
-  #   name: OWASP ZAP Baseline Scan
-  #   runs-on: ubuntu-latest
-  #   needs: lint
-  #
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v4
-  #
-  #     - name: Start local web server
-  #       run: |
-  #         python3 scripts/security_server.py &
-  #
-  #     - name: Wait for site
-  #       run: |
-  #         for i in {1..20}; do
-  #           if curl --fail --silent --show-error http://127.0.0.1:8080/html/index.html > /dev/null; then
-  #             exit 0
-  #           figit
-  #           sleep 1
-  #         done
-  #         exit 1
-  #
-  #     - name: Run OWASP ZAP baseline scan
-  #       uses: zaproxy/action-baseline@v0.15.0
-  #       with:
-  #         target: http://127.0.0.1:8080/html/index.html
-  #         fail_action: false
-  #         allow_issue_writing: false
-  #         artifact_name: zap-baseline-report
+    # Disabled: OWASP ZAP baseline scan currently causes more CI friction than value.
+    # security:
+    #   name: OWASP ZAP Baseline Scan
+    #   runs-on: ubuntu-latest
+    #   needs: lint
+    #
+    #   steps:
+    #     - name: Checkout
+    #       uses: actions/checkout@v4
+    #
+    #     - name: Start local web server
+    #       run: |
+    #         python3 scripts/security_server.py &
+    #
+    #     - name: Wait for site
+    #       run: |
+    #         for i in {1..20}; do
+    #           if curl --fail --silent --show-error http://127.0.0.1:8080/html/index.html > /dev/null; then
+    #             exit 0
+    #           figit
+    #           sleep 1
+    #         done
+    #         exit 1
+    #
+    #     - name: Run OWASP ZAP baseline scan
+    #       uses: zaproxy/action-baseline@v0.15.0
+    #       with:
+    #         target: http://127.0.0.1:8080/html/index.html
+    #         fail_action: false
+    #         allow_issue_writing: false
+    #         artifact_name: zap-baseline-report

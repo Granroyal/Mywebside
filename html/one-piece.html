@@ -1,49 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Piece TCG</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <header>
-        <h1>One Piece TCG</h1>
-        <nav><a href="../index.html">Forside</a><a href="hobby.html?view=tcg">TCG</a></nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>One Piece TCG</title>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>One Piece TCG</h1>
+            <nav><a href="../index.html">Forside</a><a href="hobby.html?view=tcg">TCG</a></nav>
+        </header>
 
-    <main>
-        <section class="content-view active" id="one-piece">
-            <a class="back-button" href="hobby.html?view=tcg">Tilbage</a>
-            <h2>One Piece TCG</h2>
-            <p>Her finder du One Piece chase cards.</p>
-            <div class="topic-links">
-                <button type="button" data-one-piece-view="mine-chase-cards"><h3>Chase cards jeg finder spændende</h3><p>Udvalgte One Piece chase cards.</p></button>
-                <button type="button" data-one-piece-view="missing-chase-cards"><h3>Chase cards jeg mangler</h3><p>Kort jeg stadig leder efter.</p></button>
-            </div>
-        </section>
+        <main>
+            <section class="content-view active" id="one-piece">
+                <a class="back-button" href="hobby.html?view=tcg">Tilbage</a>
+                <h2>One Piece TCG</h2>
+                <p>Her finder du One Piece chase cards.</p>
+                <div class="topic-links">
+                    <button type="button" data-one-piece-view="mine-chase-cards">
+                        <h3>Chase cards jeg finder spændende</h3>
+                        <p>Udvalgte One Piece chase cards.</p>
+                    </button>
+                    <button type="button" data-one-piece-view="missing-chase-cards">
+                        <h3>Chase cards jeg mangler</h3>
+                        <p>Kort jeg stadig leder efter.</p>
+                    </button>
+                </div>
+            </section>
 
-        <section class="content-view" id="mine-chase-cards">
-            <button class="back-button" type="button" data-one-piece-view="one-piece">Tilbage</button>
-            <h2>Chase cards jeg finder spændende</h2>
-            <div class="pokemon-favourites"><h3>Mine One Piece chase cards</h3><ul>
-                <li><button type="button" data-one-piece-view="one-piece-chase-card-1">Nameless 1</button></li><li><button type="button" data-one-piece-view="one-piece-chase-card-2">Nameless 2</button></li><li><button type="button" data-one-piece-view="one-piece-chase-card-3">Nameless 3</button></li><li><button type="button" data-one-piece-view="one-piece-chase-card-4">Nameless 4</button></li><li><button type="button" data-one-piece-view="one-piece-chase-card-5">Nameless 5</button></li><li><button type="button" data-one-piece-view="one-piece-chase-card-6">Nameless 6</button></li><li><button type="button" data-one-piece-view="one-piece-chase-card-7">Nameless 7</button></li><li><button type="button" data-one-piece-view="one-piece-chase-card-8">Nameless 8</button></li><li><button type="button" data-one-piece-view="one-piece-chase-card-9">Nameless 9</button></li><li><button type="button" data-one-piece-view="one-piece-chase-card-10">Nameless 10</button></li>
-            </ul></div>
-        </section>
+            <section class="content-view" id="mine-chase-cards">
+                <button class="back-button" type="button" data-one-piece-view="one-piece">
+                    Tilbage
+                </button>
+                <h2>Chase cards jeg finder spændende</h2>
+                <div class="pokemon-favourites">
+                    <h3>Mine One Piece chase cards</h3>
+                    <ul>
+                        <li>
+                            <button type="button" data-one-piece-view="one-piece-chase-card-1">
+                                Nameless 1
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" data-one-piece-view="one-piece-chase-card-2">
+                                Nameless 2
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" data-one-piece-view="one-piece-chase-card-3">
+                                Nameless 3
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" data-one-piece-view="one-piece-chase-card-4">
+                                Nameless 4
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" data-one-piece-view="one-piece-chase-card-5">
+                                Nameless 5
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" data-one-piece-view="one-piece-chase-card-6">
+                                Nameless 6
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" data-one-piece-view="one-piece-chase-card-7">
+                                Nameless 7
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" data-one-piece-view="one-piece-chase-card-8">
+                                Nameless 8
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" data-one-piece-view="one-piece-chase-card-9">
+                                Nameless 9
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" data-one-piece-view="one-piece-chase-card-10">
+                                Nameless 10
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-        <section class="content-view pokemon-card-page" id="one-piece-chase-card-1"><button class="back-button" type="button" data-one-piece-view="mine-chase-cards">Tilbage</button><h2>Nameless 1</h2><div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div></section>
-        <section class="content-view pokemon-card-page" id="one-piece-chase-card-2"><button class="back-button" type="button" data-one-piece-view="mine-chase-cards">Tilbage</button><h2>Nameless 2</h2><div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div></section>
-        <section class="content-view pokemon-card-page" id="one-piece-chase-card-3"><button class="back-button" type="button" data-one-piece-view="mine-chase-cards">Tilbage</button><h2>Nameless 3</h2><div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div></section>
-        <section class="content-view pokemon-card-page" id="one-piece-chase-card-4"><button class="back-button" type="button" data-one-piece-view="mine-chase-cards">Tilbage</button><h2>Nameless 4</h2><div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div></section>
-        <section class="content-view pokemon-card-page" id="one-piece-chase-card-5"><button class="back-button" type="button" data-one-piece-view="mine-chase-cards">Tilbage</button><h2>Nameless 5</h2><div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div></section>
-        <section class="content-view pokemon-card-page" id="one-piece-chase-card-6"><button class="back-button" type="button" data-one-piece-view="mine-chase-cards">Tilbage</button><h2>Nameless 6</h2><div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div></section>
-        <section class="content-view pokemon-card-page" id="one-piece-chase-card-7"><button class="back-button" type="button" data-one-piece-view="mine-chase-cards">Tilbage</button><h2>Nameless 7</h2><div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div></section>
-        <section class="content-view pokemon-card-page" id="one-piece-chase-card-8"><button class="back-button" type="button" data-one-piece-view="mine-chase-cards">Tilbage</button><h2>Nameless 8</h2><div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div></section>
-        <section class="content-view pokemon-card-page" id="one-piece-chase-card-9"><button class="back-button" type="button" data-one-piece-view="mine-chase-cards">Tilbage</button><h2>Nameless 9</h2><div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div></section>
-        <section class="content-view pokemon-card-page" id="one-piece-chase-card-10"><button class="back-button" type="button" data-one-piece-view="mine-chase-cards">Tilbage</button><h2>Nameless 10</h2><div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div></section>
+            <section class="content-view pokemon-card-page" id="one-piece-chase-card-1">
+                <button class="back-button" type="button" data-one-piece-view="mine-chase-cards">
+                    Tilbage
+                </button>
+                <h2>Nameless 1</h2>
+                <div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div>
+            </section>
+            <section class="content-view pokemon-card-page" id="one-piece-chase-card-2">
+                <button class="back-button" type="button" data-one-piece-view="mine-chase-cards">
+                    Tilbage
+                </button>
+                <h2>Nameless 2</h2>
+                <div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div>
+            </section>
+            <section class="content-view pokemon-card-page" id="one-piece-chase-card-3">
+                <button class="back-button" type="button" data-one-piece-view="mine-chase-cards">
+                    Tilbage
+                </button>
+                <h2>Nameless 3</h2>
+                <div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div>
+            </section>
+            <section class="content-view pokemon-card-page" id="one-piece-chase-card-4">
+                <button class="back-button" type="button" data-one-piece-view="mine-chase-cards">
+                    Tilbage
+                </button>
+                <h2>Nameless 4</h2>
+                <div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div>
+            </section>
+            <section class="content-view pokemon-card-page" id="one-piece-chase-card-5">
+                <button class="back-button" type="button" data-one-piece-view="mine-chase-cards">
+                    Tilbage
+                </button>
+                <h2>Nameless 5</h2>
+                <div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div>
+            </section>
+            <section class="content-view pokemon-card-page" id="one-piece-chase-card-6">
+                <button class="back-button" type="button" data-one-piece-view="mine-chase-cards">
+                    Tilbage
+                </button>
+                <h2>Nameless 6</h2>
+                <div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div>
+            </section>
+            <section class="content-view pokemon-card-page" id="one-piece-chase-card-7">
+                <button class="back-button" type="button" data-one-piece-view="mine-chase-cards">
+                    Tilbage
+                </button>
+                <h2>Nameless 7</h2>
+                <div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div>
+            </section>
+            <section class="content-view pokemon-card-page" id="one-piece-chase-card-8">
+                <button class="back-button" type="button" data-one-piece-view="mine-chase-cards">
+                    Tilbage
+                </button>
+                <h2>Nameless 8</h2>
+                <div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div>
+            </section>
+            <section class="content-view pokemon-card-page" id="one-piece-chase-card-9">
+                <button class="back-button" type="button" data-one-piece-view="mine-chase-cards">
+                    Tilbage
+                </button>
+                <h2>Nameless 9</h2>
+                <div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div>
+            </section>
+            <section class="content-view pokemon-card-page" id="one-piece-chase-card-10">
+                <button class="back-button" type="button" data-one-piece-view="mine-chase-cards">
+                    Tilbage
+                </button>
+                <h2>Nameless 10</h2>
+                <div class="chase-card-gallery"><p>Tilføj chase-card-billeder her.</p></div>
+            </section>
 
-        <section class="content-view" id="missing-chase-cards"><button class="back-button" type="button" data-one-piece-view="one-piece">Tilbage</button><h2>Chase cards jeg mangler</h2><p>Her kommer de One Piece chase cards, jeg stadig leder efter.</p></section>
-    </main>
-    <script src="../js/one-piece.js"></script>
-</body>
+            <section class="content-view" id="missing-chase-cards">
+                <button class="back-button" type="button" data-one-piece-view="one-piece">
+                    Tilbage
+                </button>
+                <h2>Chase cards jeg mangler</h2>
+                <p>Her kommer de One Piece chase cards, jeg stadig leder efter.</p>
+            </section>
+        </main>
+        <script src="../js/one-piece.js"></script>
+    </body>
 </html>
