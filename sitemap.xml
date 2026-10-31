@@ -4,13 +4,7 @@
         <loc>http://127.0.0.1:8080/html/index.html</loc>
     </url>
     <url>
-        <loc>http://127.0.0.1:8080/html/about.html</loc>
-    </url>
-    <url>
         <loc>http://127.0.0.1:8080/html/projects.html</loc>
-    </url>
-    <url>
-        <loc>http://127.0.0.1:8080/html/studie.html</loc>
     </url>
     <url>
         <loc>http://127.0.0.1:8080/html/hobby.html</loc>

@@ -1,6 +1,6 @@
 # Personlig hjemmeside
 
-Min personlige hjemmeside og mit lille hyggeprojekt. Her samler jeg mine projekter, noter fra datamatikeruddannelsen og hobbyer, så jeg kan følge min udvikling over tid.
+Min personlige hjemmeside og mit lille hyggeprojekt. Her samler jeg mine projekter og hobbyer, så jeg kan følge min udvikling over tid.
 
 Jeg bygger siden fra bunden for at øve mig og holde det, jeg lærer, ved lige.
 
@@ -8,15 +8,12 @@ Jeg bygger siden fra bunden for at øve mig og holde det, jeg lærer, ved lige.
 
 - At lave min egen personlige hjemmeside fra bunden
 - At samle mine projekter et sted
-- At dokumentere ting, jeg lærer på datamatikeruddannelsen
 - At bygge en portfolio, som kan vise min udvikling over tid
 
 ## Indhold
 
 - **Forside:**
-- **Om mig:**
 - **Projekter:** Raspberry Pi, NAS Ser
-- **Studie:** Datamatiker
 - **Hobby:** TCG (One Piece, Pokémon og Dragon Ball), 3D-printer og Top10-spilanbefalinger
 
 Hobby-siden samler oversigten. One Piece, Pokémon og Dragon Ball har hver deres side, mens
@@ -53,9 +50,7 @@ Mulige næste skridt for at automatisere flere af de manuelle tjek:
 - [x] Oprette sider og fælles navigation
 - [x] Tilføje sektioner til Raspberry Pi, TCG (One Piece, Pokémon og Dragon Ball), 3D-printer og Top10
 - [x] Opsætte automatiske HTML-tjek og en sikkerhedsscanning
-- [ ] Skrive en personlig præsentation på Om mig-siden (Måske)
 - [ ] Tilføje beskrivelser og billeder af mine projekter
-- [ ] Udfylde studiesiden med noter og emner (Måske)
 - [ ] Tilføje kort og produkter til mine TCG-samlinger
 - [ ] Tilføje billeder og beskrivelser af 3D-printprojekter
 - [ ] Opdatere footer og links til GitHub og LinkedIn
