@@ -86,6 +86,11 @@
                         <h3>Egen LLM</h3>
                         <p>Opsæt en sprogmodel og eksperimentér med en personlig AI-assistent.</p>
                     </button>
+
+                    <button type="button" data-project-view="tcgvault">
+                        <h3>TCGvault</h3>
+                        <p>Organisering af mine bulk-kort og planer for en digital kortsamling.</p>
+                    </button>
                 </div>
             </section>
 
@@ -128,6 +133,93 @@
                 <p>
                     Her kommer mine planer, valg af model og hardware samt noter fra opsætningen og
                     mine forsøg.
+                </p>
+            </section>
+
+            <section class="content-view" id="tcgvault">
+                <button class="back-button" type="button" data-project-view="future-projects">
+                    Tilbage
+                </button>
+                <h2>TCGvault</h2>
+                <p><strong>Status:</strong> Fremtidigt projekt på idé- og planlægningsstadiet.</p>
+
+                <h3>Vision</h3>
+                <p>
+                    Jeg vil samle og organisere mine TCG-samlinger med særligt fokus på bulk-kort,
+                    så også de almindelige kort får en fast plads og bliver nemme at finde. På sigt
+                    vil jeg skabe et digitalt overblik over alle mine kort, deres placering og
+                    værdi. TCGvault er først og fremmest et hobby- og læringsprojekt, ikke en
+                    forretning.
+                </p>
+
+                <h3>Mine fire samlinger</h3>
+                <ul>
+                    <li>Pokémon TCG</li>
+                    <li>One Piece Card Game</li>
+                    <li>World of Warcraft TCG</li>
+                    <li>Magic: The Gathering</li>
+                </ul>
+
+                <h3>Prioriteter</h3>
+                <ol>
+                    <li>
+                        Først vil jeg organisere de fysiske samlinger med bulk-opbevaringskasser,
+                        tydelige mærkater, skillekort og beskyttende sleeves.
+                    </li>
+                    <li>
+                        Derefter vil jeg arbejde hen imod digital registrering af kortene og deres
+                        placering samt en hjemmeside til at få overblik over samlingen.
+                    </li>
+                    <li>
+                        Senere vil jeg undersøge scanning, værdiudvikling og eventuelt salg af
+                        dubletter, når den grundlæggende organisering fungerer.
+                    </li>
+                </ol>
+                <p>Projektet skal udvikle sig gradvist i mit eget tempo uden deadlines.</p>
+
+                <h3>Planlagte funktioner og muligheder</h3>
+                <ul>
+                    <li>
+                        Et kortregister over alle kort, herunder commons, uncommons, rares og
+                        varianter, med antal, stand og anslået markedsværdi.
+                    </li>
+                    <li>
+                        Registrering af fysisk placering, så kortene kan findes via mærkede
+                        opbevaringskasser og skillekort.
+                    </li>
+                    <li>
+                        En hjemmeside, hvor jeg kan gennemse, søge, filtrere og administrere min
+                        samling.
+                    </li>
+                    <li>
+                        Undersøge automatisk scanning og identifikation af flere kort ad gangen med
+                        mulighed for at importere resultaterne i databasen.
+                    </li>
+                    <li>Følge samlingens anslåede værdi og et eventuelt overskud over tid.</li>
+                    <li>
+                        Eventuelt give besøgende mulighed for at købe dubletter i fremtiden. Det er
+                        en mulighed, ikke en forudsætning for projektet.
+                    </li>
+                </ul>
+
+                <h3>Tekniske ønsker og overvejelser</h3>
+                <p>
+                    Målet er et kortregister i PostgreSQL og en backend i Python. FastAPI er en
+                    mulig ramme til backend, og Docker overvejes til lokal udvikling. Udviklingen
+                    skal i første omgang foregå på min MacBook. Det er foreløbige ønsker;
+                    arkitekturen og de konkrete tekniske valg er endnu ikke besluttet.
+                </p>
+
+                <h3>Principper og afgrænsning</h3>
+                <p>
+                    Jeg vil prioritere open source, ejerskab over mine egne data og mindst mulig
+                    binding til bestemte leverandører. Læring og glæden ved samlingen skal styre
+                    projektet.
+                </p>
+                <p>
+                    På dette stadie dokumenterer jeg kun vision, funktioner og prioriteter.
+                    Implementering, installation af afhængigheder og arkitekturbeslutninger hører
+                    til senere.
                 </p>
             </section>
 
